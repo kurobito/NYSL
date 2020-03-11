@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NYSL</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
+    <link href="./resources/css/gameinfo.css" type="text/css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6959a909c1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header" id="header">
+        <a href="index.html"><img id="headerImage" src="resources/image.png"></a>
+    </header>
+    <nav class="nav">
+        <ul class="nav_items">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About NYSL</a></li>
+            <li><a class="active" href="#gameinfo">Game Information</a></li>
+            <li><a href="rules.html">Rules</a></li>
+            <li><a href="registration.html">Registration</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main id="gameinfo">
+        <header class="schedule-header" id="schedule-header">
+            game schedule
+        </header>
+
+        <section class="schedule-section">
+            <h3>Fall Schedule</h3>
+            <h5>*All games take place on Saturday.</h5>
+            <table class="month-table">
+                <tr>
+                    <th class="month-heading">September</th>
+                    <th>Teams</th>
+                    <th>Locations</th>
+                    <th>Times</th>
+                </tr>
+                <tr>
+                    <td rowspan="2">9/01</td>
+                    <td>U1 and U4</td>
+                    <td>AJ Katzenmaier</td>
+                    <td>9:30 a.m.</td>
+                </tr>
+                <tr>
+                    <td>U3 and U2</td>
+                    <td>Greenbay</td>
+                    <td>1:00 p.m.</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">9/08</td>
+                    <td>U5 and U6</td>
+                    <td>Howard A Yeager</td>
+                    <td>9:30 a.m.</td>
+                </tr>
+                <tr>
+                    <td>U6 and U1</td>
+                    <td>Marjorie P Hart</td>
+                    <td>1:00 p.m.</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">9/15</td>
+                    <td>U2 and U4</td>
+                    <td>North</td>
+                    <td>9:30 a.m.</td>
+                </tr>
+                <tr>
+                    <td>U3 and U5</td>
+                    <td>AJ Katzenmaier</td>
+                    <td>1:00 p.m.</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">9/22</td>
+                    <td>U1 and U3</td>
+                    <td>South</td>
+                    <td>9:30 a.m.</td>
+                </tr>
+                <tr>
+                    <td>U2 and U6</td>
+                    <td>Howard A Yeager</td>
+                    <td>1:00 p.m.</td>
+                </tr>
+                <tr>
+                    <td>9/29</td>
+                    <td>U4 and U5</td>
+                    <td>Greenbay</td>
+                    <td>9:30 a.m.</td>
+                </tr>
+            </table>
+            <table class="month-table">
+                <tr class="month-col">
+                    <th class="month-heading">October</th>
+                    <th>Teams</th>
+                    <th>Locations</th>
+                    <th>Times</th>
+                </tr>
+                <tr>
+                    <td rowspan="2">10/06</td>
+                    <td>U2 and U5</td>
+                    <td>Marjorie P Hart</td>
+                    <td>9:30 a.m.</td>
+                </tr>
+                <tr>
+                    <td>U1 and U6</td>
+                    <td>South</td>
+                    <td>1:00 p.m.</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">10/13</td>
+                    <td>U3 and U4</td>
+                    <td>Howard A Yeager</td>
+                    <td>9:30 a.m.</td>
+                </tr>
+                <tr>
+                    <td>U5 and U1</td>
+                    <td>Greenbay</td>
+                    <td>1:00 p.m.</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">10/20</td>
+                    <td>U6 and U3</td>
+                    <td>North</td>
+                    <td>9:30 a.m.</td>
+                </tr>
+                <tr>
+                    <td>U2 and U4</td>
+                    <td>Marjorie P Hart</td>
+                    <td>1:00 p.m.</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">10/27</td>
+                    <td>U3 and U1</td>
+                    <td>AJ Katzenmaier</td>
+                    <td>9:30 a.m.</td>
+                </tr>
+                <tr>
+                    <td>U5 and U6</td>
+                    <td>Howard A Yeager</td>
+                    <td>1:00 p.m.</td>
+                </tr>
+            </table>
+
+            <h3>Game Locations:</h3>
+            <table class="location-table">
+                <tr>
+                    <td>AJ Katzenmaier Elementary</td>
+                    <td>
+                        <a id ="katzenmaier-link" href="javascript:updateMaps('katzenmaier-link')">24 W. Walton St., Chicago, IL 60610</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Greenbay Elementary</td>
+                    <td>
+                        <a id="greenbay-link" href="javascript:updateMaps('greenbay-link')" >1734 N. Orleans St., Chicago, IL 60614</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Howard A Yeager Elementary</td>
+                    <td>
+                        <a id="howard-link" href="javascript:updateMaps('howard-link')">2245 N. Southport Ave., Chicago, IL 60614</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Marjorie P Hart Elementary</td>
+                    <td>
+                        <a id="marjorie-link" href="javascript:updateMaps('marjorie-link')">2625 N. Orchard St., Chicago, IL 60614</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>North Elementary</td>
+                    <td>
+                        <a id="north-link" href="javascript:updateMaps('north-link')">1409 N. Ogden Ave., Chicago, IL 60610</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>South Elementary</td>
+                    <td>
+                        <a id="south-link" href="javascript:updateMaps('south-link')">2101 N. Fremton St., Chicago, IL 60614</a>
+                    </td>
+                </tr>
+            </table>
+            <div class="map">
+                <iframe id="map"
+                frameborder="1" style="border:0"
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCOEjB9sDVdnAtQL-lCXeZ5fRP8owNG9aQ
+                &q=24 W. Walton St., Chicago, IL 60610" allowfullscreen>
+            </iframe>
+        </div>
+    </section>
+
+</main> 
+    <script src="scripts/scroll.js"></script>
+<script>
+        // Update the embedded google map
+        function updateMaps(documentId){
+            let mapUrl = "https://www.google.com/maps/embed/v1/place?key=AIzaSyCOEjB9sDVdnAtQL-lCXeZ5fRP8owNG9aQ&q=";
+            let mapLink = "katzenmaier-link"
+            const link = document.getElementById(documentId);
+            const map = document.getElementById("map");
+
+            // Get text from inside the a element
+            const mapQuery = link.firstChild.nodeValue;
+            // Append the query at the end of the url
+            mapUrl += mapQuery;
+            mapLink = documentId;
+            map.src = mapUrl;
+        }
+    </script>
+</body>
+</html>
